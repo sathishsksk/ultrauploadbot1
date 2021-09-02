@@ -32,10 +32,7 @@ jobs:
           HD_ACCOUNTS_ZIP_URL: ${{secrets.ACCOUNTS_ZIP_URL}}
           HD_TOKEN_PICKLE_URL: ${{secrets.TOKEN_PICKLE_URL}}
           HD_INDEX_URL: ${{secrets.INDEX_URL}}
-          HD_BLOCK_MEGA_FOLDER: ${{secrets.BLOCK_MEGA_FOLDER}}
-          HD_BLOCK_MEGA_LINKS: ${{secrets.BLOCK_MEGA_LINKS}}
           HD_STOP_DUPLICATE: ${{secrets.STOP_DUPLICATE}}
           HD_VIEW_LINK: ${{secrets.VIEW_LINK}}
           HD_IGNORE_PENDING_REQUESTS: ${{secrets.IGNORE_PENDING_REQUESTS}}
-          HD_USE_SERVICE_ACCOUNTS: ${{secrets.USE_SERVICE_ACCOUNTS}}
-          HD_SERVER_PORT: ${{secrets.SERVER_PORT}}
+          
