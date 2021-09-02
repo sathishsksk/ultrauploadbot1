@@ -149,7 +149,7 @@
       },
       "IMAGE_URL": {
         "description": "Show Image/Logo in /start message, Use telegra.ph or any direct link image.",
-        "value": "https://telegra.ph/file/019996f816db9ed576cff.jpg",
+        "value": "https://pbs.twimg.com/profile_images/1429306806602407946/WkZo9VAK_400x400.jpg",
         "required": false
        },
       "VIEW_LINK": {
