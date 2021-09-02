@@ -35,4 +35,4 @@ jobs:
           HD_STOP_DUPLICATE: ${{secrets.STOP_DUPLICATE}}
           HD_VIEW_LINK: ${{secrets.VIEW_LINK}}
           HD_IGNORE_PENDING_REQUESTS: ${{secrets.IGNORE_PENDING_REQUESTS}}
-          
+          HD_DATABASE_URL: ${{secrets.DATABASE_URL}}
