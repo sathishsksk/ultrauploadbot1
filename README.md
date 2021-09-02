@@ -1,22 +1,22 @@
 [![Slam](https://telegra.ph/file/019996f816db9ed576cff.jpg)](https://t.me/request_ayush)
 
-owner of this repo :- [AYUSH](https://github.com/ayushteke)
+owner of this repo :- [AYUSH](https://github.com/sathishsksk/stats-update-mirrorbot)
 
 
-# all the commits are made from [slam-mirrorbot](https://github.com/SlamDevs/slam-mirrorbot)
+# all the commits are made from [slam-mirrorbot](https://github.com/sathishsksk/stats-update-mirrorbot)
 
-## all the credit goes to [slamDevs](https://github.com/SlamDevs)
+## all the credit goes to [slamDevs](https://github.com/sathishsksk/stats-update-mirrorbot)
 
 
 
-contact me :- [AYUSH](https://t.me/request_ayush)
+contact me :- [AYUSH](https://github.com/sathishsksk/stats-update-mirrorbot)
 
 # Slam Mirror Bot
 This is a telegram bot writen in python for mirroring files on the internet to our beloved Google Drive.
 
 ## Deploying on Heroku
 Give Star & Fork this repo, then upload **token.pickle** & **credentials.json** to your forks
-to know how to get them click on the  #[ link ](https://github.com/ayushteke/slam_aria_mirror_bot_HEROKU#getting-google-oauth-api-credential-file)
+to know how to get them click on the  #[ link ](https://github.com/sathishsksk/stats-update-mirrorbot)
 
 ## watch this video for full instructions 
 # [video 1](https://www.youtube.com/watch?v=4Dq_yWxWtQQ) ( with SA accounts and mega.nz )
