@@ -380,7 +380,7 @@ class GoogleDriveHelper:
                     return "your clone has been stopped and cloned data has been deleted!", "cancelled"
                 msg += f'<b>☞ 📂Filename : </b><code>{meta.get("name")}</code>\n<b>Size: </b><code>{get_readable_file_size(self.transferred_size)}</code>'
                 msg += f'\n<b>☞ 🌀Type : </b><code>Folder</code>'
-                msg += f'\n<b>☞ Powerd by : @AT_BOTs</b>'
+                msg += f'\n<b>☞ Powerd by : @sk_mass_king</b>'
                 buttons = button_build.ButtonMaker()
                 if SHORTENER is not None and SHORTENER_API is not None:
                     surl = requests.get(f'https://{SHORTENER}/api?api={SHORTENER_API}&url={durl}&format=text').text
