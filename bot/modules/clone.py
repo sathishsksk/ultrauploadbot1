@@ -11,7 +11,7 @@ import string
 
 
 def cloneNode(update, context):
-    args = update.message.text.split(" ", maxsplit=1)
+    args = update.message.text.split(" ")
     if len(args) > 1:
         link = args[1]
         gd = gdriveTools.GoogleDriveHelper()
