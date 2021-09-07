@@ -18,7 +18,6 @@ jobs:
           region: "us"
         env:
           HD_AUTO_DELETE_MESSAGE_DURATION: ${{secrets.AUTO_DELETE_MESSAGE_DURATION}}
-          HD_BASE_URL_OF_BOT: ${{secrets.BASE_URL_OF_BOT}}
           HD_BOT_TOKEN: ${{secrets.BOT_TOKEN}}
           HD_DOWNLOAD_DIR: ${{secrets.DOWNLOAD_DIR}}
           HD_DOWNLOAD_STATUS_UPDATE_INTERVAL: ${{secrets.DOWNLOAD_STATUS_UPDATE_INTERVAL}}
@@ -29,10 +28,3 @@ jobs:
           HD_TELEGRAM_HASH: ${{secrets.TELEGRAM_HASH}}
           HD_UPSTREAM_REPO: ${{secrets.UPSTREAM_REPO}}
           HD_UPSTREAM_BRANCH: ${{secrets.UPSTREAM_BRANCH}}
-          HD_ACCOUNTS_ZIP_URL: ${{secrets.ACCOUNTS_ZIP_URL}}
-          HD_TOKEN_PICKLE_URL: ${{secrets.TOKEN_PICKLE_URL}}
-          HD_INDEX_URL: ${{secrets.INDEX_URL}}
-          HD_STOP_DUPLICATE: ${{secrets.STOP_DUPLICATE}}
-          HD_VIEW_LINK: ${{secrets.VIEW_LINK}}
-          HD_IGNORE_PENDING_REQUESTS: ${{secrets.IGNORE_PENDING_REQUESTS}}
-          HD_DATABASE_URL: ${{secrets.DATABASE_URL}}
