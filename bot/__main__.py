@@ -95,11 +95,26 @@ def bot_help(update, context):
 /{BotCommands.TarMirrorCommand} [download_url][magnet_link]: Start mirroring and upload the archived (.tar) version of the download
 /{BotCommands.ZipMirrorCommand} [download_url][magnet_link]: Start mirroring and upload the archived (.zip) version of the download
 /{BotCommands.UnzipMirrorCommand} [download_url][magnet_link]: Starts mirroring and if downloaded file is any archive, extracts it to Google Drive
+/{BotCommands.QbMirrorCommand} [magnet_link][torrent_file][torrent_file_url]: Start Mirroring using qBittorrent, Use /{BotCommands.QbMirrorCommand} s to select files before downloading
+/{BotCommands.QbZipMirrorCommand} [magnet_link][torrent_file][torrent_file_url]: Start mirroring using qBittorrent and upload the file/folder compressed with zip extension
+/{BotCommands.QbUnzipMirrorCommand} [magnet_link][torrent_file][torrent_file_url]: Start mirroring using qBittorrent and upload the file/folder extracted from any archive extension
+/{BotCommands.LeechCommand} [download_url][magnet_link]: Start leeching to Telegram, Use /{BotCommands.LeechCommand} s to select files before leeching
+/{BotCommands.ZipLeechCommand} [download_url][magnet_link]: Start leeching to Telegram and upload the file/folder compressed with zip extension
+/{BotCommands.UnzipLeechCommand} [download_url][magnet_link][torent_file]: Start leeching to Telegram and upload the file/folder extracted from any archive extension
+/{BotCommands.QbLeechCommand} [magnet_link][torrent_file][torrent_file_url]: Start leeching to Telegram using qBittorrent, Use /{BotCommands.QbLeechCommand} s to select files before leeching
+/{BotCommands.QbZipLeechCommand} [magnet_link][torrent_file][torrent_file_url]: Start leeching to Telegram using qBittorrent and upload the file/folder compressed with zip extension
+/{BotCommands.QbUnzipLeechCommand} [magnet_link][torrent_file][torrent_file_url]: Start leeching to Telegram using qBittorrent and upload the file/folder extracted from any archive extension
 /{BotCommands.CloneCommand} [drive_url]: Copy file/folder to Google Drive
 /{BotCommands.CountCommand} [drive_url]: Count file/folder of Google Drive Links
 /{BotCommands.DeleteCommand} [drive_url]: Delete file from Google Drive (Only Owner & Sudo)
 /{BotCommands.WatchCommand} [youtube-dl supported link]: Mirror through youtube-dl. Click /{BotCommands.WatchCommand} for more help
 /{BotCommands.TarWatchCommand} [youtube-dl supported link]: Mirror through youtube-dl and tar before uploading
+/{BotCommands.WatchCommand} [yt-dlp supported link]: Mirror yt-dlp supported link. Send /{BotCommands.WatchCommand} for more help
+/{BotCommands.ZipWatchCommand} [yt-dlp supported link]: Mirror yt-dlp supported link as zip
+/{BotCommands.LeechWatchCommand} [yt-dlp supported link]: Leech yt-dlp supported link
+/{BotCommands.LeechZipWatchCommand} [yt-dlp supported link]: Leech yt-dlp supported link as zip
+/{BotCommands.LeechSetCommand}: Leech settings
+/{BotCommands.SetThumbCommand}: Reply photo to set it as Thumbnail
 /{BotCommands.CancelMirror}: Reply to the message by which the download was initiated and that download will be cancelled
 /{BotCommands.CancelAllCommand}: Cancel all running tasks
 /{BotCommands.ListCommand} [search term]: Searches the search term in the Google Drive, If found replies with the link
@@ -127,16 +142,26 @@ def bot_help(update, context):
 /{BotCommands.TarMirrorCommand} [download_url][magnet_link]: Start mirroring and upload the archived (.tar) version of the download
 /{BotCommands.ZipMirrorCommand} [download_url][magnet_link]: Start mirroring and upload the archived (.zip) version of the download
 /{BotCommands.UnzipMirrorCommand} [download_url][magnet_link]: Starts mirroring and if downloaded file is any archive, extracts it to Google Drive
+/{BotCommands.QbMirrorCommand} [magnet_link][torrent_file][torrent_file_url]: Start Mirroring using qBittorrent, Use /{BotCommands.QbMirrorCommand} s to select files before downloading
+/{BotCommands.QbZipMirrorCommand} [magnet_link][torrent_file][torrent_file_url]: Start mirroring using qBittorrent and upload the file/folder compressed with zip extension
+/{BotCommands.QbUnzipMirrorCommand} [magnet_link][torrent_file][torrent_file_url]: Start mirroring using qBittorrent and upload the file/folder extracted from any archive extension
+/{BotCommands.LeechCommand} [download_url][magnet_link]: Start leeching to Telegram, Use /{BotCommands.LeechCommand} s to select files before leeching
+/{BotCommands.ZipLeechCommand} [download_url][magnet_link]: Start leeching to Telegram and upload the file/folder compressed with zip extension
+/{BotCommands.UnzipLeechCommand} [download_url][magnet_link][torent_file]: Start leeching to Telegram and upload the file/folder extracted from any archive extension
+/{BotCommands.QbLeechCommand} [magnet_link][torrent_file][torrent_file_url]: Start leeching to Telegram using qBittorrent, Use /{BotCommands.QbLeechCommand} s to select files before leeching
+/{BotCommands.QbZipLeechCommand} [magnet_link][torrent_file][torrent_file_url]: Start leeching to Telegram using qBittorrent and upload the file/folder compressed with zip extension
+/{BotCommands.QbUnzipLeechCommand} [magnet_link][torrent_file][torrent_file_url]: Start leeching to Telegram using qBittorrent and upload the file/folder extracted from any archive extension
 /{BotCommands.CloneCommand} [drive_url]: Copy file/folder to Google Drive
 /{BotCommands.CountCommand} [drive_url]: Count file/folder of Google Drive Links
+/{BotCommands.DeleteCommand} [drive_url]: Delete file from Google Drive (Only Owner & Sudo)
 /{BotCommands.WatchCommand} [youtube-dl supported link]: Mirror through youtube-dl. Click /{BotCommands.WatchCommand} for more help
 /{BotCommands.TarWatchCommand} [youtube-dl supported link]: Mirror through youtube-dl and tar before uploading
-/{BotCommands.CancelMirror}: Reply to the message by which the download was initiated and that download will be cancelled
-/{BotCommands.ListCommand} [search term]: Searches the search term in the Google Drive, If found replies with the link
-/{BotCommands.StatusCommand}: Shows a status of all the downloads
-/{BotCommands.StatsCommand}: Show Stats of the machine the bot is hosted on
-/{BotCommands.PingCommand}: Check how long it takes to Ping the Bot
-/{BotCommands.TsHelpCommand}: Get help for Torrent search module
+/{BotCommands.WatchCommand} [yt-dlp supported link]: Mirror yt-dlp supported link. Send /{BotCommands.WatchCommand} for more help
+/{BotCommands.ZipWatchCommand} [yt-dlp supported link]: Mirror yt-dlp supported link as zip
+/{BotCommands.LeechWatchCommand} [yt-dlp supported link]: Leech yt-dlp supported link
+/{BotCommands.LeechZipWatchCommand} [yt-dlp supported link]: Leech yt-dlp supported link as zip
+/{BotCommands.LeechSetCommand}: Leech settings
+/{BotCommands.SetThumbCommand}: Reply photo to set it as Thumbnail
 '''
 
     if CustomFilters.sudo_user(update) or CustomFilters.owner_filter(update):
@@ -151,11 +176,23 @@ botcmds = [
         (f'{BotCommands.TarMirrorCommand}','Start mirroring and upload as .tar'),
         (f'{BotCommands.UnzipMirrorCommand}','Extract files'),
         (f'{BotCommands.ZipMirrorCommand}','Start mirroring and upload as .zip'),
+        (f'{BotCommands.QbMirrorCommand}','Mirror torrent using qBittorrent'),
+        (f'{BotCommands.QbZipMirrorCommand}','Mirror torrent and upload as zip using qb'),
+        (f'{BotCommands.QbUnzipMirrorCommand}','Mirror torrent and extract files using qb'),
+        (f'{BotCommands.LeechCommand}','Leech'),
+        (f'{BotCommands.ZipLeechCommand}','Leech and upload as zip'),
+        (f'{BotCommands.UnzipLeechCommand}','Leech and extract files'),
+        (f'{BotCommands.QbLeechCommand}','Leech torrent using qBittorrent'),
+        (f'{BotCommands.QbZipLeechCommand}','Leech torrent and upload as zip using qb'),
+        (f'{BotCommands.QbUnzipLeechCommand}','Leech torrent and extract using qb'),
+        (f'{BotCommands.LeechWatchCommand}','Leech yt-dlp supported link'),
+        (f'{BotCommands.LeechZipWatchCommand}','Leech yt-dlp supported link as zip'),
         (f'{BotCommands.CloneCommand}','Copy file/folder to Drive'),
         (f'{BotCommands.CountCommand}','Count file/folder of Drive link'),
         (f'{BotCommands.DeleteCommand}','Delete file from Drive'),
         (f'{BotCommands.WatchCommand}','Mirror Youtube-dl support link'),
         (f'{BotCommands.TarWatchCommand}','Mirror Youtube playlist link as .tar'),
+        (f'{BotCommands.LeechZipWatchCommand}','Leech yt-dlp supported link as zip'),
         (f'{BotCommands.CancelMirror}','Cancel a task'),
         (f'{BotCommands.CancelAllCommand}','Cancel all tasks'),
         (f'{BotCommands.ListCommand}','Searches files in Drive'),
